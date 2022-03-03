@@ -1,0 +1,1 @@
+Lab2 compulsory (momentan)
