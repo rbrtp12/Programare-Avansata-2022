@@ -5,7 +5,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 @ToString
@@ -15,13 +16,7 @@ public class Catalog implements Serializable {
     private String title;
     private List<Item> items = new ArrayList<>();
 
-    public Catalog(String title, List<Item> items) {
-        this.title = title;
-        this.items = items;
-    }
-    public Catalog(){
-
-    }
+   
 
     /**
      * adds item to catalog
