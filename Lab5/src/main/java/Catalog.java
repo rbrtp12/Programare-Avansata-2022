@@ -19,6 +19,9 @@ public class Catalog implements Serializable {
         this.title = title;
         this.items = items;
     }
+    public Catalog(){
+
+    }
 
     /**
      * adds item to catalog
