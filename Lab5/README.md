@@ -1,4 +1,4 @@
-LAB 5 REQUIREMENTS (Solved compulsory entirely (load function has an error)
+LAB 5 REQUIREMENTS (Solved compulsory entirely (load function has an error) - solved error, needed default constructors
 
 Compulsory (1p)
 
