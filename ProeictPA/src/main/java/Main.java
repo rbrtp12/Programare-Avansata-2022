@@ -6,7 +6,6 @@ import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
 import javax.security.auth.login.LoginException;
-import javax.swing.text.Document;
 import java.io.IOException;
 
 public class Main {
