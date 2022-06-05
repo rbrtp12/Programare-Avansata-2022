@@ -31,9 +31,9 @@ public class GoogleSearch {
 
         // execut cautarea
         Search result = list.execute();
-        if (result.getItems()!=null){
+        if (result.getItems() != null) {
             for (Result ri : result.getItems()) {
-                    results.add(ri);
+                results.add(ri);
             }
         }
 
