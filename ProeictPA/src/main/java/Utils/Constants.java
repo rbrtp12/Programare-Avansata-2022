@@ -1,5 +1,5 @@
 package Utils;
 
 public class Constants {
-    public static String prefix = "/";
+    public static String prefix = "$";
 }
