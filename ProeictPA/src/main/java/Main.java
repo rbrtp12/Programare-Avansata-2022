@@ -5,6 +5,7 @@ import net.dv8tion.jda.api.entities.Activity;
 
 
 import javax.security.auth.login.LoginException;
+import javax.swing.text.Document;
 
 public class Main {
     public static void main(String[] args) throws LoginException {
@@ -12,5 +13,6 @@ public class Main {
                 .setActivity(Activity.playing("Cine v-a facut doamna aicea ?")).build();
 
         dorelBot.addEventListener(new Executer());
+
     }
 }
