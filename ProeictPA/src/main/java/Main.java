@@ -16,6 +16,6 @@ public class Main {
 
         dorelBot.addEventListener(new Executer());
 
-        Crawler.getDailyHoroscope(9);
+        System.out.println(Crawler.getDailyHoroscope(9));
     }
 }
