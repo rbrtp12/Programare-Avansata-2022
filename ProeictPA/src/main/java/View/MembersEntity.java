@@ -1,27 +1,26 @@
 package View;
 
 import javax.persistence.*;
-import java.math.BigInteger;
 
 @Entity
-@Table(name = "Members", schema = "STUDENT", catalog = "")
+@Table(name = "members", schema = "schemadinberceni")
 public class MembersEntity {
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "ID", nullable = false, precision = 0)
-    private BigInteger id;
+    @Column(name = "id", nullable = false)
+    private int id;
     @Basic
-    @Column(name = "NAME", nullable = true, length = 20)
+    @Column(name = "name", nullable = true, length = 20)
     private String name;
     @Basic
-    @Column(name = "ZODIAC_ID", nullable = true, precision = 0)
-    private BigInteger zodiacId;
+    @Column(name = "zodiacId", nullable = true)
+    private Integer zodiacId;
 
-    public BigInteger getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -33,11 +32,11 @@ public class MembersEntity {
         this.name = name;
     }
 
-    public BigInteger getZodiacId() {
+    public Integer getZodiacId() {
         return zodiacId;
     }
 
-    public void setZodiacId(BigInteger zodiacId) {
+    public void setZodiacId(Integer zodiacId) {
         this.zodiacId = zodiacId;
     }
 }

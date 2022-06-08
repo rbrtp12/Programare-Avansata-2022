@@ -1,24 +1,23 @@
 package View;
 
 import javax.persistence.*;
-import java.math.BigInteger;
 
 @Entity
-@Table(name = "Zodiacs", schema = "STUDENT", catalog = "")
-public class ZodiacsEntity {
+@Table(name = "zodiac", schema = "schemadinberceni")
+public class ZodiacEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @Column(name = "ID", nullable = false, precision = 0)
-    private BigInteger id;
+    @Column(name = "id", nullable = false)
+    private int id;
     @Basic
-    @Column(name = "NAME", nullable = true, length = 20)
+    @Column(name = "name", nullable = true, length = 20)
     private String name;
 
-    public BigInteger getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(int id) {
         this.id = id;
     }
 

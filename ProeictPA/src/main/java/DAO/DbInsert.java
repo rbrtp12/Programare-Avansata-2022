@@ -13,7 +13,7 @@ public class DbInsert {
         Connection connection = null;
         try {
             connection = DriverManager.getConnection(Constants.DBURL, Constants.USERNAME, Constants.PASSWORD);
-            String insertStatement = "INSERT INTO STUDENT.Members VALUES (null, (?), (?))";
+            String insertStatement = "INSERT INTO schemadinberceni.MEMBERS(id, name, zodiacId) VALUES (id, (?), (?))";
             log.info("insertMembersStatement -> " + insertStatement);
             PreparedStatement statement = connection.prepareStatement(insertStatement);
             statement.setString(1, name);

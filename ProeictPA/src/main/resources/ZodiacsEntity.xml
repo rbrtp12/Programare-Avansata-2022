@@ -13,4 +13,29 @@
             </basic>
         </attributes>
     </entity>
+    <entity class="View.MembersEntity">
+        <table name="members" schema="schemadinberceni" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="20"/>
+            </basic>
+            <basic name="zodiacId">
+                <column name="zodiacId" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="View.ZodiacEntity">
+        <table name="zodiac" schema="schemadinberceni" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="20"/>
+            </basic>
+        </attributes>
+    </entity>
 </entity-mappings>

@@ -1,4 +1,5 @@
 import Commands.Executer;
+import Commands.HoroscopeCommand;
 import Utils.Crawler;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;

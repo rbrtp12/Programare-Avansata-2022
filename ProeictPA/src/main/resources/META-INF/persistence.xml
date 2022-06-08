@@ -7,12 +7,14 @@
 
       <mapping-file>MembersEntity.xml</mapping-file>
       <mapping-file>ZodiacsEntity.xml</mapping-file>
+      <mapping-file>ZodiacEntity.xml</mapping-file>
       <class>View.MembersEntity</class>
       <class>View.ZodiacsEntity</class>
+      <class>View.ZodiacEntity</class>
       <properties>
-          <property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
-          <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
-          <property name="hibernate.connection.username" value="student"/>
+          <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306"/>
+          <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+          <property name="hibernate.connection.username" value="root"/>
           <property name="hibernate.connection.password" value="student"/>
       </properties>
   </persistence-unit>

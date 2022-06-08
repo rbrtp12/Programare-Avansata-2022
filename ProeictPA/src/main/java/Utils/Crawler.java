@@ -10,11 +10,11 @@ import org.jsoup.nodes.Element;
 @Log
 public class Crawler {
 
-    public static Element getDailyHoroscope(int signIndex) throws IOException {
+    public static String getDailyHoroscope(int signIndex) throws IOException {
         final Document doc = Jsoup.connect("https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=" + signIndex).get();
         Element dailyHoroscope; // today's horoscope for a certain zodiac sign
         dailyHoroscope = doc.select("p").first();
-        return dailyHoroscope;
+        return dailyHoroscope.toString();
     }
 
 }
