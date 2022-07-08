@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SearchCommand {
-    public static void getSearchCommand(MessageReceivedEvent event, String[] args){
-        List<Result> results = new ArrayList<>();
 
+    public static void getSearchCommand(MessageReceivedEvent event, String[] args) {
+        List<Result> results = new ArrayList<>();
         try {
             results = GoogleSearch.searchOnStackOverflow(args[1]);
         } catch (GeneralSecurityException e) {

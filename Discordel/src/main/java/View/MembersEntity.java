@@ -3,7 +3,7 @@ package View;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "members", schema = "schemadinberceni")
+@Table(name = "members", schema = "heroku_001ae26eae7ca64")
 public class MembersEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
